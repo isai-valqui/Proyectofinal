@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background: rgb(255, 255, 255);
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0;
+}
+h3{
+    font-family: cursive;
+}
+h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*************/
+/* CARRUSEL  */
+/************/
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+/***********/
+/* NAVBAR */
+/**********/
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+  }
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar .getstarted {
+	background: #c54f90;
+	margin-left: 30px;
+	border-radius: 4px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	line-height: 2.3;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #000;
+}
+.w-100 {
+	height: 100vh;
+}
+
+.small-image {
+    width: 90px; 
+    height: outo;
+  }
+/*******************/
+/*VENTANA FLOTANTE */
+/*******************/
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+#modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
+}
+  
+#modal-content {
+    padding: 20px;
+}
+  
+#modal-content select, #modal-content input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+ #modal-content button {
+    margin-top: 10px;
+}
+  
+#modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .card {
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+/*detalles*/
+.details h2 {
+    font-size: 25px;
+}
+/*******************/
+/* SECCION FILTROS */
+/*******************/
+.filters {
+    margin: 20px 0;
+    background-color: rgb(16 8 9 / 45%);
+    padding-bottom: 2rem;
+}
+
+.filters button {
+    margin-right: 2px;
+}
+#toggleButton {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 2px;
+}
+
+#filterButton, #resetButton {
+    background-color: #f60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* SECCION OFERTAS */
+.services .card-body i {
+	font-size: 50px;
+}
+
+/*********************/
+/* SECCION PRODUCTOS */
+/*********************/
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.product {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin: 11px;
+    text-align: center;
+    max-width: 300px;
+    box-sizing: border-box;
+    transform: scale(0.8); 
+    transform-origin: center;
+    transition: transform 0.3s ease; 
+} 
+
+.card-product {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(180, 146, 52);
+    margin-bottom: 20px;
+    flex-basis: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-color: rgb(163, 124, 52);
+    
+}
+.card-product img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+.product img {
+    width: 95px;
+    height: 95px;
+}
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.price {
+    margin-top: auto;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.price s {
+    color: grey;
+    margin-right: 10px;
+}
+.product-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/******************************/
+/* AGREGAR PRODUCTO Y CARRITO */
+/******************************/
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quantity {
+    width: 50px;
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.increment, .decrement {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.2em; 
+}
+
+#cart-nav {
+    position: relative;
+}
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px; 
+    margin-top: 4px; 
+}
+.add-to-cart i {
+    pointer-events: none;
+}
+#carrito {
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    max-height: 400px;
+    overflow: auto;
+    display: none;
+    z-index: 999;
+    border: 1px solid #333;
+    top: 100%;
+}
+#carrito div {
+    display: grid;
+    grid-template-columns: 30px 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#carrito img {
+    width: 30px;
+    height: auto;
+}
+.remove {
+    background-color: #f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*notificacion*/
+#carrito-icon {
+    position: relative;
+}
+
+#cart-notification {
+    position: absolute;
+    top: -10px; /* Mueve la notificación un poco más abajo */
+    right: 91px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0; /* Elimina el padding */
+    width: 20px; /* Ajusta el ancho para un círculo perfecto */
+    height: 20px; /* Ajusta el alto para un círculo perfecto */
+    line-height: 20px; /* Centra el texto verticalmente */
+    text-align: center;
+}
+
+/*************/
+/* ANUNCIOS  */
+/*************/
+.team .card {
+	box-shadow: 15px 15px 40px rgba(224, 144, 144, 0.15);
+}
+
+.team .card-body i {
+	font-size: 20px;
+}
+
+/********************************* */
+/*      	SECCION FOOTER		   */
+/********************************* */
+.footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+/* MEDIA QUERI */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		bottom: 370px;
+	}
+	.carousel-caption p {
+		width: 100%;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+	.img-area img {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+		bottom: 125px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		line-height: 1.6;
+		font-size: 12px;
+	}
+	.about-text {
+		padding-top: 50px;
+	}
+	.card {
+		margin-bottom: 30px;
+	}
+}
+/* OFERTAS */
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
